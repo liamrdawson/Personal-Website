@@ -1,0 +1,46 @@
+nav {
+  grid-area: nav;
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: $brand;
+      text-align: center;
+      list-style: none;
+      width: 100%;
+      height: 27px;
+      transition-property: color, background-color;
+      transition: .5s;
+    }
+  }
+  @include mq('sm') {
+    margin-top: -27px;
+    color: $gray-0;
+      ul {
+        flex-direction: row;
+        li {
+          border-radius: 10px 10px 0 0;
+        }
+      }
+  }
+}
+
+li a {
+  color: $gray-0;
+  text-decoration: none;
+}
+
+li:hover {
+  transition: .4s;
+  transition-property: color, background-color;
+  background-color: $gray-0;
+  color: $brand;
+  a {
+    color: $brand;
+  }
+}

@@ -1,0 +1,27 @@
+
+@mixin txt-padding {
+  padding: 10px;
+}
+
+@mixin corners {
+  border-radius: 10px;
+}
+
+
+
+//  RESPONSIVE DESIGN
+
+@mixin mq($break) {
+  $value: map-get($breakpoints, $break);
+  $sm: map-get($breakpoints, 'sm');
+  @if $value < $sm {
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}

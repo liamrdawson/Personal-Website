@@ -1,0 +1,11 @@
+.profile-pic {
+  display: block;
+  margin: $mrg auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  @include mq('sm') {
+    width: 150px;
+    height: 150px;
+  }
+}

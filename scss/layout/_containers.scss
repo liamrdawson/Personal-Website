@@ -1,0 +1,55 @@
+.container {
+  min-height: 100vh;
+  margin: 0 auto;
+  @include mq('sm') {
+    width: 90%;
+  }
+  @include mq('lg') {
+    width: 80%;
+  }
+}
+
+.intro {
+  grid-area: intro;
+  @include txt-padding;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro p {
+  font-size: 1em;
+  margin: $mrg auto;
+  padding: 0 1em;
+}
+
+
+.title {
+  display: block;
+  width: 100%;
+}
+
+.portfolio {
+  margin: $mrg 0 0 0;
+  grid-area: portfolio;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include mq('sm') {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.experience {
+  margin: $mrg 0;
+  padding: 0 1em;
+  grid-area: experience;
+}
+
+.job {
+  &-1, &-2, &-3 {
+    h4 {
+      text-align: left;
+    }
+  }
+}

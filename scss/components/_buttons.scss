@@ -1,0 +1,17 @@
+.btn-contact {
+  @include corners;
+  border: none;
+  height: 50px;
+  width: 60%;
+  margin: $mrg auto;
+  text-transform: uppercase;
+  color: $gray-0;
+  background-color: $brand;
+  border: solid 1px $brand;
+  transition-property: color, background-color;
+  &:hover {
+    transition: .4s;
+    color: $brand;
+    background-color: $gray-0;
+  }
+}

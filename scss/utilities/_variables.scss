@@ -1,0 +1,39 @@
+//  COLORS
+
+$gray-0: #f8f9f9;
+$gray-1: #ebedee;
+$gray-2: #dee1e3;
+$gray-3: #cfd3d6;
+$gray-4: #bec4c8;
+$gray-5: #acb4b9;
+$gray-6: #98a0a8;
+$gray-9: #374048;
+
+$brand: #0066cc;
+$secondary: #00cc66;
+$accent: #e0e067;
+
+
+//  SPACING
+
+$mrg: 1em;
+
+
+//  TYPE SCALE (Golden Ratio)
+$h1-L: 6.854em;
+$h1: 4.236em;
+$h2: 2.618em;
+$h3: 1.618em;
+$p: 1em;
+
+
+//  MEDIA QUERY BREAKPOINTS
+
+$breakpoints: (
+   'xxs': 480px,
+  'x-sm': 576px,
+    'sm': 706px,
+   'med': 768px,
+    'lg': 992px,
+   'xlg': 1200px,
+);
