@@ -22,6 +22,12 @@
   padding: 0 1em;
 }
 
+.intro p span {
+  font-size: $h3;
+  color: black;
+  display: block;
+  color: $brand;
+}
 
 .title {
   display: block;
