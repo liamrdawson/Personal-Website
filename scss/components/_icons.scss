@@ -4,191 +4,6 @@
   //@include corners;
 }
 
-// skills flex container
-// .skills {
-//   padding: 15px;
-//   display: flex;
-//   flex-flow: row wrap;
-
-// }
-
-// // skill items
-// .card {
-  
-//   margin: 15px;
-//   height: 75px;
-//   width: 100%;
-//   transition: all .2s ease-out;
-  
-//   @include corners;
-//   //Media Querys for icon stacking
-//   @include mq('sm') {
-//     width: calc((100% / 2) - 30px);
-//   }
-//   @include mq('med') {
-//     width: calc((100% / 3) - 30px);
-//   }
-//   box-shadow: 0px 5px 5px 5px rgba($gray-5, .3);
-
-
-//   &:hover {
-//     transition: .5s;
-//     transition-property: box-shadow transform;
-    
-//   }
-
-//   &__inner{
-//     width: 100%;
-//     padding: 10px;
-//     text-align: center;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     cursor: pointer;
-//     position: relative;
-
-//     transition: all 0.2s ease-in-out;
-//     &:after {
-//       transition: all 0.2s ease-in-out;
-//     }
-//   }
-
-//   .fa {
-//     width: 100%;
-//     margin-top: .25em;
-//   }
-
-//   //EXPANDER
-//   &__expander {
-//     transition: all .3s ease-in-out;
-//     background-color: $brand;
-//     width: 100%;
-//     position: relative;
-
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-    
-
-//     text-transform: uppercase;
-//     color: $text-light;
-//     font-size: 1.5em;
-
-//     .fa {
-//       font-size: 0.75em;
-//       position: absolute;
-//       top: 10px;
-//       right: 10px;
-//       cursor: pointer;
-      
-//       &:hover {
-//         opacity: 0.9;
-//       }
-//     }
-
-//   }
-
-//   &.is-collapsed {
-
-//     .skill__inner {
-//       &:after {
-//         content: "";
-//         opacity: 0;
-//       }
-//     }
-//     .skill__expander {
-//       max-height: 0;
-//       min-height: 0;
-//       overflow: hidden;
-//       margin-top: 0;
-//       opacity: 0;
-//     }
-//   }
-
-//   &.is-expanded {
-
-//     .skill__inner {
-//       background-color: $brand;
-//       //speech triangle
-//       &:after {
-//         content: "";
-//         opacity: 1;
-//         display: block;
-//         height: 0;
-//         width: 0;
-//         position: absolute;
-//         bottom: -30px;
-//         left: calc(50% - 15px);
-//         border-left: solid 15px transparent;
-//         border-right: solid 15px transparent;
-//         border-bottom: solid 15px $brand;
-//       }
-
-      
-//     }
-
-//     .skill__expander {
-//       max-height: 1000px;
-//       min-height: 200px;
-//       overflow: visible;
-//       margin-top: 30px;
-//       opacity: 1;
-//     }
-//     &:hover {
-//       .skill__inner {
-//         transform: scale(1);
-//       }
-//     }
-//   }
-
-//   &.is-inactive {
-//     .skill__inner {
-//       pointer-events: none;
-//       opacity: 0.5;
-//     }
-//     &:hover {
-//       .skill__inner {
-//         background-color: tomato;
-//         transform: scale(1);
-//       }
-//     }
-//   }
-
-// }
-
-// // EXPANDER WIDTHS
-// // When 3 skills
-// @media screen and (min-width: 992px) {
-
-//   .skill:nth-of-type(3n+2) .skill__expander {
-//     margin-left: calc(-100% - 30px);
-//   }
-//   .skill:nth-of-type(3n+3) .skill__expander {
-//     margin-left: calc(-200% - 60px);
-//   }
-//   .skill:nth-of-type(3n+4) {
-//     clear: left;
-//   }
-//   .skill__expander {
-//     width: calc(300% + 60px);
-//   }
-
-// }
-// // When 2 skills
-// @media screen and (min-width: 768px) and (max-width: 991px) {
-
-//   .skill:nth-of-type(2n+2) .skill__expander {
-//     margin-left: calc(-100% - 30px);
-//   }
-//   .skill:nth-of-type(2n+3) {
-//     clear: left;
-//   }
-//   .skill__expander {
-//     width: calc(200% + 30px);
-//   }
-
-// }
-
 //Grid Container
 .skills {
   padding: 10px;
@@ -203,6 +18,8 @@
   min-height: 75px;
   width: calc((100% / 3) - 30px);
   transition: all 0.2s ease-in-out;
+  perspective: 500;
+  border-radius: 10px;
   
 
   //media queries for stacking cards
@@ -217,22 +34,25 @@
   &:hover {
     .card__inner {
       background-color: $brand;
-      transform: scale(1.05);
+      transform: perspective(250px) translate3d(0, 0, 15px);
     }
   }
 
   &__inner {
     width: 100%;
     height: 75px;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     border-radius: 10px;
     flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0px 5px 5px 5px rgba($gray-5, .3);
+    align-items: center;
     position: relative;
     cursor: pointer;
     
-    background-color: $gray-5;
-    color: $text-light;
+    background-color: $bg-light;
+    color: $text-dark;
     text-transform: uppercase;
     text-align: center;
 
@@ -291,7 +111,7 @@
   &.is-expanded {
 
     .card__inner {
-      background-color: $brand;
+      background-color: $bg-light;
       
       &:after{
         content: "";
@@ -304,7 +124,7 @@
         left: calc(50% - 15px);
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
-        border-bottom: 15px solid tomato;
+        border-bottom: 15px solid $brand;
       }
       
       //folder open icon
@@ -323,7 +143,8 @@
 
     &:hover {
       .card__inner {
-        transform: scale(1);
+        transform: scale(1)
+
       }
     }
   }
@@ -336,7 +157,7 @@
     
     &:hover {
       .card__inner {
-        background-color: $gray-5;
+        background-color: $bg-light;
         transform: scale(1);
       }
     }
