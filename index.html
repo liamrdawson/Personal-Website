@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet"> 
+    
     <title>Liam Dawson | Front-End Dev</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -33,50 +34,99 @@
         <button type="button" name="button" class="btn-contact">Get in touch</button>
       </div>
 
+      
       <div class="skills" id="skills">
         <h3 class="title">Skills</h3>
-        <div class="skill html">
-          <img src="images/html5.svg" alt="HTML5" class="icon">
-          <h4>HTML5</h4>
+
+        <div class="card [ is-collapsed ]">
+          <div class="card__inner [ js-expander ] ">
+            <img src="images/html5.svg" alt="HTML5" class="icon">
+            <h4>HTML5</h4>
+          </div>
+          <div class="card__expander">
+            Skill Expander
+          </div>
         </div>
-        
-        <div class="skill">
-          <img src="images/CSS3-Logo(Color).svg" alt="CSS3" class="icon">
-          <h4>CSS3</h4>
+
+        <div class="card [ is-collapsed ]">
+          <div class="card__inner [ js-expander ] ">
+            <img src="images/CSS3-Logo(Color).svg" alt="CSS3" class="icon">
+            <h4>CSS3</h4>
+          </div>
+          <div class="card__expander">
+            Skill Expander
+          </div>
         </div>
-        <div class="skill">
-          <img src="images/Sass-Logo(Color).svg" alt="Sass" class="icon">
-          <h4>SASS / SCSS</h4>
+
+        <div class="card [ is-collapsed ]">
+          <div class="card__inner [ js-expander ] ">
+            <img src="images/Sass-Logo(Color).svg" alt="SASS" class="icon">
+            <h4>SASS / SCSS</h4>
+          </div>
+          <div class="card__expander">
+            Skill Expander
+          </div>
         </div>
-        <div class="skill">
-          <img src="images/Bootstrap-Logo(Color).svg" alt="Bootstrap" class="icon">
-          <h4>Bootstrap</h4>
+
+        <div class="card [ is-collapsed ]">
+          <div class="card__inner [ js-expander ] ">
+            <img src="images/Bootstrap-Logo(Color).svg" alt="Bootstrap" class="icon">
+            <h4>Bootstrap</h4>
+          </div>
+          <div class="card__expander">
+            Skill Expander
+          </div>
         </div>
-        <div class="skill">
-          <img src="images/JS-Logo(Color).svg" alt="JavaScript" class="icon">
-          <h4>JavaScript</h4>
+
+        <div class="card [ is-collapsed ]">
+          <div class="card__inner [ js-expander ] ">
+            <img src="images/JS-Logo(Color).svg" alt="JavaScript" class="icon">
+            <h4>JavaScript</h4>
+            <i class="fa fa-folder-o"></i>
+          </div>
+          <div class="card__expander">
+            <i class="fa fa-close [ js-collapser ]"></i>
+            Skill Expander
+          </div>
         </div>
-        <div class="skill">
-          <img src="images/Git-Logo(Color).svg" alt="Git and Git hub" class="icon">
-          <h4>Git / Github</h4>
+
+        <div class="card [ is-collapsed ]">
+          <div class="card__inner [ js-expander ] ">
+            <img src="images/Git-Logo(Color).svg" alt="Git" class="icon">
+            <h4>Git / Github</h4>
+          </div>
+          <div class="card__expander">
+            Skill Expander
+          </div>
         </div>
-          <div class="skill">
-            <img src="images/Git-Logo(Color).svg" alt="J Query" class="icon">
+
+        <div class="card [ is-collapsed ]">
+          <div class="card__inner [ js-expander ] ">
+            <img src="images/Git-Logo(Color).svg" alt="JQuery" class="icon">
             <h4>JQuery</h4>
           </div>
-          <div class="skill">
+          <div class="card__expander">
+            Skill Expander
+          </div>
+        </div>
+
+        <div class="card [ is-collapsed ]">
+          <div class="card__inner [ js-expander ] ">
             <img src="images/Git-Logo(Color).svg" alt="AJAX" class="icon">
             <h4>AJAX</h4>
-          </div>        
+          </div>
+          <div class="card__expander">
+            Skill Expander
+          </div>
+        </div>
+
       </div>
 
       <div class="portfolio" id="portfolio">
         <h3 class="title">Projects</h3>
         <div class="project one">
-          <h3>Flower Shop</h3>
         </div>
         <div class="project two">
-          <h3>Street Scenes</h3>
         </div>
       </div>
 
@@ -113,6 +163,7 @@
     </div>
     <footer>
     </footer>
+    <script src="jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

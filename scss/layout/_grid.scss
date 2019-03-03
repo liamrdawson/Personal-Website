@@ -20,19 +20,13 @@
   }
 }
 
-.skills {
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
-  grid-auto-rows:  repeat (auto, 140px);
-}
 
 .jobs {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
 
-.title-skills, .title {
+.title-skills {
   grid-column-start: 1;
   grid-column-end: -1;
 }

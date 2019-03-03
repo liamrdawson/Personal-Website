@@ -11,6 +11,8 @@
     height: calc(25vw * 1.4);
     max-height: 450px;
   }
+  box-shadow: 0px 5px 5px 5px rgba($gray-5, .3);
+
 }
 
 .project h3 {
@@ -23,7 +25,7 @@
 
 .one {
   font-family: 'Sacramento', cursive;
-  background-image:url('../images/hero-flower.jpg');
+  background-image:url('../images/riff.png');
   @include mq('sm') {
     background-position: 50% 0;
   }
@@ -31,12 +33,20 @@
 
 .two {
   font-family: 'Playfair Display', serif;
-  background-image:url('../images/hero-photo.jpg');
-  background-position: 60% 70%;
+  background-image:url('../images/todo.png');
+  background-position: 48% 0%;
 }
 
 .one, .two {
   font-size: 2em;
   repeat: no-repeat;
   background-size: cover;
+}
+
+.test {
+  border: solid 1px red;
+  margin-top: 50px;
+  width: 100%;
+  display: block;
+  order: 1;
 }
