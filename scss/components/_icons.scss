@@ -33,7 +33,6 @@
 
   &:hover {
     .card__inner {
-      background-color: $brand;
       transform: perspective(250px) translate3d(0, 0, 15px);
     }
   }
@@ -70,6 +69,7 @@
     background-color: $brand;
     width: 100%;
     position: relative;
+    border-radius: 10px;
     
     display: flex;
     justify-content: center;
@@ -157,7 +157,6 @@
     
     &:hover {
       .card__inner {
-        background-color: $bg-light;
         transform: scale(1);
       }
     }

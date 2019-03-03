@@ -308,7 +308,7 @@ template {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f8f9f9;
+  background-color: #ebedee;
   min-height: 100vh;
   padding: 0;
   margin: 0; }
@@ -368,7 +368,6 @@ h3 {
     .card {
       width: 100%; } }
   .card:hover .card__inner {
-    background-color: #0066cc;
     transform: perspective(250px) translate3d(0, 0, 15px); }
   .card__inner {
     width: 100%;
@@ -394,6 +393,7 @@ h3 {
     background-color: #0066cc;
     width: 100%;
     position: relative;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,7 +444,6 @@ h3 {
     pointer-events: none;
     opacity: 0.5; }
   .card.is-inactive:hover .card__inner {
-    background-color: #ebedee;
     transform: scale(1); }
 
 @media screen and (min-width: 992px) {
