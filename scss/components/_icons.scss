@@ -72,11 +72,11 @@
     position: relative;
     border-radius: 10px;
     
+    
     display: flex;
     justify-content: center;
     align-items: center;
     
-    text-transform: uppercase;
     color: $text-light;
   }
   &.is-collapsed {
@@ -118,6 +118,7 @@
       overflow: visible;
       margin-top: 30px;
       opacity: 1;
+      padding: 10px;
     }
     &:hover {
       .card__inner {
