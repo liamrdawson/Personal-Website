@@ -13,5 +13,14 @@
     transition: .4s;
     color: $brand;
     background-color: $gray-0;
+    cursor: pointer;
+    
   }
+  &:after {
+    transition: .4s;
+    color: $gray-0;
+    background-color: $brand;
+  }
+  
+
 }
