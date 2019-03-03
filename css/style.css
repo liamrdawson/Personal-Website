@@ -359,7 +359,8 @@ h3 {
 .skills {
   padding: 10px;
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  grid-area: skills; }
 
 .card {
   margin: 15px;
@@ -494,6 +495,13 @@ nav {
       height: 27px;
       transition-property: color, background-color;
       transition: .5s; }
+      nav ul li:hover {
+        transition: .4s;
+        transition-property: color, background-color;
+        background-color: #f8f9f9;
+        color: #0066cc; }
+        nav ul li:hover a {
+          color: #0066cc; }
   @media (min-width: 620px) {
     nav {
       margin-top: -27px;
@@ -506,14 +514,6 @@ nav {
 li a {
   color: #f8f9f9;
   text-decoration: none; }
-
-li:hover {
-  transition: .4s;
-  transition-property: color, background-color;
-  background-color: #f8f9f9;
-  color: #0066cc; }
-  li:hover a {
-    color: #0066cc; }
 
 /*======================
     PROJECTS GALLERY
@@ -566,7 +566,8 @@ li:hover {
 
 .container {
   min-height: 100vh;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   @media (min-width: 620px) {
     .container {
       width: 90%; } }
@@ -579,6 +580,12 @@ li:hover {
   padding: 10px;
   display: flex;
   flex-direction: column; }
+  @media (min-width: 620px) {
+    .intro {
+      position: sticky;
+      top: 50px;
+      height: 700px;
+      width: 300px; } }
 
 .intro p {
   font-size: 1em;
@@ -595,6 +602,9 @@ li:hover {
   display: block;
   width: 100%; }
 
+.container h3 {
+  margin-bottom: 50px; }
+
 .portfolio {
   margin: 1em 0 0 0;
   grid-area: portfolio;
@@ -607,14 +617,25 @@ li:hover {
       flex-wrap: wrap; } }
 
 .experience {
-  margin: 1em 0;
+  margin: 0;
   padding: 0 1em;
   grid-area: experience; }
 
-.job-1 h4, .job-2 h4, .job-3 h4 {
+.job h4 {
   text-align: left; }
 
+.jobs h3 {
+  margin-bottom: 0; }
+
+.job-title {
+  margin-bottom: -10px;
+  margin-top: 50px; }
+
+.job-spec {
+  grid-row: 1 / -1; }
+
 footer {
+  margin-top: 50px;
   background-color: #0066cc;
   grid-area: footer;
   height: 50px; }
@@ -633,7 +654,7 @@ footer {
 
 .jobs {
   display: grid;
-  grid-template-columns: 1fr 3fr; }
+  grid-template-columns: repeat(1fr 3fr); }
 
 .title-skills {
   grid-column-start: 1;

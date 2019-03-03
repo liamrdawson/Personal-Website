@@ -16,6 +16,15 @@ nav {
       height: 27px;
       transition-property: color, background-color;
       transition: .5s;
+      &:hover {
+        transition: .4s;
+        transition-property: color, background-color;
+        background-color: $gray-0;
+        color: $brand;
+        a {
+          color: $brand;
+        }
+      }
     }
   }
   @include mq('sm') {
@@ -33,14 +42,4 @@ nav {
 li a {
   color: $gray-0;
   text-decoration: none;
-}
-
-li:hover {
-  transition: .4s;
-  transition-property: color, background-color;
-  background-color: $gray-0;
-  color: $brand;
-  a {
-    color: $brand;
-  }
 }
