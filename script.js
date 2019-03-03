@@ -1,6 +1,11 @@
 
-
+/* 
+    Use JQuery to control skills card animation 
+*/
 var $cell = $('.card');
+var $header = $('header');
+
+$header.find();
 
 $cell.find('.js-expander').click(function() {
 
@@ -20,4 +25,25 @@ $cell.find('.js-expander').click(function() {
       $thisCell.removeClass('is-expanded').addClass('is-collapsed');
       $cell.not($thisCell).removeClass('is-inactive');
     }
+});
+
+
+
+/*
+      Use vanilla JS to control nav animation on mobile
+*/
+
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  burger.addEventListener('click', () => {
+    //nav menu animation
+    navMenu.classList.toggle('ul-active');
+    //burger animation
+    burger.classList.toggle('toggle');
   });
+}
+
+navSlide();
+

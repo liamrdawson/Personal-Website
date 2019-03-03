@@ -8,12 +8,14 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: $h1;
-  margin: auto;
+  font-weight: 800;
+  margin: 50px auto 0;
   color: $gray-0;
 }
 
@@ -25,5 +27,4 @@ span {
 
 h3 {
   text-align: center;
-  margin: $mrg auto;
 }
