@@ -113,6 +113,13 @@
     }
   }
 
+  .card__inner:after {
+    bottom: -60px;
+    content: "";
+    display: block;
+    opacity: 0;
+    transition: opacity 0.2s 0.2s ease-in-out, bottom 0.2s 0.2s ease-in-out;
+  }
   &.is-expanded {
     .card__inner {
       background-color: $bg-light;
