@@ -1,26 +1,10 @@
 .btn-contact {
-  @include corners;
+  margin-top: 15px;
+  text-decoration: none;
+  outline: none;
   border: none;
-  height: 50px;
-  width: 60%;
-  margin: $mrg auto;
-  text-transform: uppercase;
-  color: $bg-light;
-  background-color: $brand;
-  border: solid 1px $brand;
-  transition-property: color, background-color;
-  &:hover {
-    transition: .4s;
+  background-color: $bg-light;
+  a{
     color: $brand;
-    background-color: $bg-light;
-    cursor: pointer;
-    
   }
-  &:after {
-    transition: .4s;
-    color: $bg-light;
-    background-color: $brand;
-  }
-  
-
 }
