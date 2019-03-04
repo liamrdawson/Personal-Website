@@ -314,6 +314,9 @@ body {
   margin: 0;
   overflow-x: hidden; }
 
+p {
+  line-height: 1.5; }
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 4.236em;
@@ -353,6 +356,20 @@ h3 {
 .icon {
   max-height: 90%;
   width: 20%; }
+
+.social {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center; }
+
+.social-icon {
+  width: 40px;
+  fill: #0E79B2;
+  margin: 5px 10px;
+  cursor: pointer; }
 
 /*======================
       SKILLS GRID
@@ -473,7 +490,7 @@ h3 {
   width: 120px;
   height: 120px;
   border-radius: 50%; }
-  @media (min-width: 620px) {
+  @media (min-width: 768px) {
     .profile-pic {
       width: 150px;
       height: 150px;
