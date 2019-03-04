@@ -47,3 +47,8 @@ const navSlide = () => {
 
 navSlide();
 
+$('.nav-menu li a').click(function(e) {
+  console.log('click');
+  $('.burger').removeClass('toggle');
+  $('.nav-menu').removeClass('ul-active');
+});
