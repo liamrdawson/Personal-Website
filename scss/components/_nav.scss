@@ -52,6 +52,7 @@ nav {
   height: 30px;
   width: 25px;
   div {
+    transition: all .3s ease-out;
     width: 25px;
     height: 3px;
     margin: 5px 0;
@@ -61,4 +62,14 @@ nav {
 
 .ul-active {
   transform: translate3d(0, 0, 0);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
