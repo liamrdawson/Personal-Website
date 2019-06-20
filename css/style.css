@@ -585,14 +585,14 @@ nav {
 
 .one {
   font-family: 'Sacramento', cursive;
-  background-image: url("../images/riff.png"); }
+  background-image: url("../project-shots/riff-ui.png"); }
   @media (min-width: 620px) {
     .one {
       background-position: 50% 0; } }
 
 .two {
   font-family: 'Playfair Display', serif;
-  background-image: url("../images/todo.png");
+  background-image: url("../project-shots/to-do-list-app.png");
   background-position: 48% 0%; }
 
 .one, .two {

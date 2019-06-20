@@ -35,7 +35,7 @@
 
 .one {
   font-family: 'Sacramento', cursive;
-  background-image:url('../../project-shots/riff-ui.png');
+  background-image:url('../project-shots/riff-ui.png');
   @include mq('sm') {
     background-position: 50% 0;
   }
@@ -43,7 +43,7 @@
 
 .two {
   font-family: 'Playfair Display', serif;
-  background-image:url('../../project-shots/to-do-list-app.png');
+  background-image:url('../project-shots/to-do-list-app.png');
   background-position: 48% 0%;
 }
 
