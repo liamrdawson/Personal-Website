@@ -8,7 +8,8 @@
 
 .project {
   @include corners;
-  height: 500px;
+  // height: 500px;
+  height: auto;
   margin: 10px;
   background-color: $gray-0;
   display: flex;
@@ -17,7 +18,8 @@
   cursor: pointer;
   @include mq('sm') {
     width: 45%;
-    height: calc(25vw * 1.4);
+    height: auto;
+   // height: calc(25vw * 1.4);
     max-height: 450px;
     
   }
@@ -36,20 +38,16 @@
 .one {
   font-family: 'Sacramento', cursive;
   background-image:url('../project-shots/riff-ui.png');
-  @include mq('sm') {
-    background-position: 50% 0;
-  }
 }
 
 .two {
   font-family: 'Playfair Display', serif;
   background-image:url('../project-shots/to-do-list-app.png');
-  background-position: 48% 0%;
 }
 
 .one, .two {
   font-size: 2em;
-  repeat: no-repeat;
+//  repeat: no-repeat;
   background-size: cover;
 }
 
